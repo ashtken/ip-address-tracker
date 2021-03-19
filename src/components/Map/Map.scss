@@ -1,0 +1,8 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.leaflet-container {
+	margin: 0;
+	height: 80vh;
+	z-index: 0;
+}

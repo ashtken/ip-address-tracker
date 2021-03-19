@@ -1,0 +1,39 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.search {
+	&__form {
+		display: flex;
+	}
+	&__input:focus,
+	textarea:focus,
+	select:focus {
+		outline: none;
+	}
+	&__input[type="text"] {
+		width: 300px;
+		height: 50px;
+		padding-left: 10px;
+		border: 0;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		@include brekpoints-up(large) {
+			width: 800px;
+		}
+	}
+	&__button {
+		height: 50px;
+		width: 50px;
+		background: $primary-color;
+		color: #fff;
+		border: 0;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	&__button:focus {
+		outline: none;
+	}
+	&__button:hover {
+		background: $secondary-color;
+	}
+}
